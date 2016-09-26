@@ -116,7 +116,8 @@ object Build {
   }
 
   val commonSettings = Seq(
-      scalaVersion := "2.11.8",
+      resolvers += "tmp" at "https://scala-ci.typesafe.com/artifactory/scala-release-temp/",
+      scalaVersion := "2.12.0-744b296-nightly",
       organization := "org.scala-js",
       version := scalaJSVersion,
 
