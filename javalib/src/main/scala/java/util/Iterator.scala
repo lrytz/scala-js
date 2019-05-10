@@ -12,8 +12,8 @@
 
 package java.util
 
-trait Iterator[E] {
+trait Iterator[EE] {
   def hasNext(): Boolean
-  def next(): E
+  def next(): EE
   def remove(): Unit
 }
